@@ -149,6 +149,7 @@ body {
 
 .logo {
   height: 40px;
+  cursor: pointer;
 }
 
 .search-button-container {
