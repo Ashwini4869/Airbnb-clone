@@ -88,6 +88,7 @@ video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -134,6 +135,9 @@ button {
   background: none;
   border: none;
   cursor: pointer;
+}
+hr {
+  margin: 0;
 }
 /* custom css  */
 body {
@@ -199,6 +203,7 @@ body {
 
 .globe-image-wrapper-container {
   width: 28px;
+  max-width: 100%;
   margin: 0px 5px;
   cursor: pointer;
   padding: 10px 8px;
@@ -320,18 +325,17 @@ body {
   height: 100%;
 }
 
-.reservation-container {
-  /* height: 600px; */
-}
-
-.description-reservation {
+.parent-container {
   display: flex;
-  padding: 0px 200px;
+  padding: 20px 200px;
 }
 
-.description-container {
-  width: 65%;
+.left-section {
   padding-right: 100px;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .description-1 {
@@ -372,7 +376,7 @@ body {
 .parking-text {
   padding: 0px 5px;
 }
-parking-text > h1 {
+.parking-text > h1 {
   font-size: 14px;
 }
 .communication-icon-wrapper {
@@ -528,9 +532,12 @@ parking-text > h1 {
   border: 1px solid gray;
   border-radius: 5px;
 }
+.reservation-container {
+  position: sticky;
+  top: 100px;
+}
 
 .sleepingArrangements {
-  padding: 0px 200px;
   margin-top: 20px;
 }
 
@@ -575,7 +582,6 @@ parking-text > h1 {
 }
 
 .amenities {
-  padding: 0px 200px;
 }
 
 .amenities__heading {
@@ -586,7 +592,6 @@ parking-text > h1 {
 }
 
 .amenities__grid {
-  width: 65%;
   display: grid;
   grid-template-columns: auto auto;
   gap: 20px;
@@ -617,6 +622,31 @@ parking-text > h1 {
 
 .amenities__card__text {
   padding: 15px 20px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
+}
+
+.location {
+  padding: 50px 200px;
+  background-color: #f1f1f1;
+}
+
+.location__heading {
+  font-size: 22px;
+  font-weight: 500;
+  padding: 30px 0;
+}
+
+.location__list {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  row-gap: 30px;
+}
+
+.location__list-elements {
+  color: gray;
+  font-weight: 300;
+}
+.location__list-elements:hover {
+  cursor: pointer;
 }
