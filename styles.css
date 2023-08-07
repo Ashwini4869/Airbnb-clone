@@ -156,9 +156,9 @@ body {
   padding: 0px 200px;
 }
 
-.logo {
-  height: 40px;
-  cursor: pointer;
+.logo-wrapper {
+  width: 102px;
+  height: 32px;
 }
 
 .search-button-container {
